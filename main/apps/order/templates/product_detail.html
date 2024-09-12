@@ -1,0 +1,8 @@
+
+{% block content %}
+    <h2>Products {{ object.name }}</h2>
+    <p>
+    {{ object.sku }} {{ object.name }} {{ object.price }}
+    </p>
+    <a href="{% url 'product_list_view' %}">Back to list</a>
+{% endblock %}
